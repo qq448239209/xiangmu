@@ -1,0 +1,27 @@
+input[type=button],input[type=submit],input[type=reset]{-webkit-appearance:none}
+button,input,textarea{resize:none}
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,html,iframe,input,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+dl,ol,ul{list-style-type:none}
+body,html{position:static}
+button,input,optgroup,option,select,textarea{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+button,input{overflow:visible;vertical-align:middle;outline:0}
+body,button,input,select,td,textarea,th{font-family:"微软雅黑","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";font-size:12px;color:#333;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a{text-decoration:none;cursor:pointer;outline:0}
+a:hover{text-decoration:none}
+a.ie6:hover{zoom:1}
+a:active{outline:0}
+button,input[type=button],input[type=submit]{line-height:normal!important}
+img{border:0;vertical-align:middle}
+a img,img{-ms-interpolation-mode:bicubic}
+.img-responsive{max-width:100%;height:auto}
+.cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.cl,.clearfix{zoom:1}
+.ellipsis{display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.hide{display:none}
+.show{display:block}
+.fl{float:left}
+.fr{float:right}
+.t_left{text-align:left}
+.t_center{text-align:center}
+.t_right{text-align:right}
