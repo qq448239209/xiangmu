@@ -1,4 +1,4 @@
-.top{position:fixed;width:100%;min-width:1280px;background:#000;}
-.topNotice{padding:20px 0px;width:100%;position:relative;}
-.topNotice-con{width:100%;margin:0 auto;position:relative;max-width:1220px;border:1px solid #fff;padding:0px 42px 0px 10px;height:32px;}
+.top{position:fixed;width:100%;background:#000;}
+.topNotice{padding:20px 30px;width:100%;position:relative;}
+.topNotice-con{width:100%;margin:0 auto;position:relative;max-width:1220px;border:1px solid #fff;padding:0px 42px 0px 10px;line-height:32px;}
 .topNotice-con p{text-align:center;line-height:32px;color:#fff;}
