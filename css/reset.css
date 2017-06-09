@@ -1,6 +1,10 @@
 input[type=button],input[type=submit],input[type=reset]{-webkit-appearance:none}
 button,input,textarea{resize:none}
-body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,html,iframe,input,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,
+dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,
+object,ol,output,p,pre,q,ruby,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{
+	margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;outline:0;box-sizing:border-box;
+}
 dl,ol,ul{list-style-type:none}
 body,html{position:static}
 button,input,optgroup,option,select,textarea{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
@@ -25,3 +29,4 @@ a img,img{-ms-interpolation-mode:bicubic}
 .t_left{text-align:left}
 .t_center{text-align:center}
 .t_right{text-align:right}
+

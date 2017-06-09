@@ -14,7 +14,7 @@
 .topCenter-box .logo{width:250px;height:50px;margin-top:30px;background-position:0 0;display:inline-block;background-image: url(../image/logo.png);
 	background-size:100%100%;}
 
-	.topCenter-box .large{position:absolute;top:0;left:0;width:50%;height:30px;font-size:14px;letter-spacing:.17em;overflow:hidden;}
+	.topCenter-box .large{position:absolute;top:0;left:0;width:50%;height:30px;font-size:14px;letter-spacing:.17em;}
 	.topCenter-box .large .search-trigger{float:left;height:30px;padding-top:15px;cursor:pointer;color:#fff;font-size:12px;}
 	.large .search-trigger span{position:relative;top:-2px;width:16px;height:16px;vertical-align:middle;margin-right:10px;background-position:-120px -10px;}
 	.large .search-trigger span:hover{background-position:-120px -50px;}
@@ -22,6 +22,13 @@
 	.large .account a{color:#999;}
 	.large .account a:hover{color:#fff;}
 	.large .account span{position: relative;top:-2px;width:16px;height:16px;vertical-align:middle;background-position:0 -9px;margin-right:10px;}
+	.search-container{position:absolute;top:40px;}
+	.search-container .simple-search-input .widget input[type=text]{margin:0;padding-left:15px;border:none;outline:0;width:275px;height:34px;
+    	font-size:.6875rem;color:#fff;background-color:#242424}
+    .search-container .suggestions{position:absolute;z-index:1;top:39px;width:290px;font-size:.6875rem;letter-spacing:.13em;color:#fff;background-color:#242424;
+    	display:none;}
+    .search-container .suggestions li{padding:15px;text-align:left;cursor:pointer;}
+    .search-container .suggestions .selLi_hover{background:#333;}
     
 	.topCenter-box .wishlist-minicart{position:absolute;top:0;width:50%;height:30px;font-size:12px;letter-spacing:.17em;right:0;overflow:hidden;}
 	.wishlist-minicart .minicart{padding-left:15px;border-left:1px solid #333;float:right;padding-top:15px;position: relative;z-index:2;height:35px;}
@@ -33,3 +40,5 @@
 	.wishlist-minicart .wishlist a{color:#999;}
 	.wishlist-minicart .wishlist a:hover{color:#fff;}
 	.wishlist .sprite{position:relative;top:-2px;width:16px;height:16px;vertical-align:middle;margin-right:10px;background-position:-40px -9px;}
+	
+	

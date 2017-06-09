@@ -31,6 +31,23 @@
 						<div class="account">
 							<a href="javascript:void(0);"><span class="icon"></span>MY ACCOUNT</a>
 						</div>
+						<div class="search-container">
+							<form>
+								<fieldset>
+									<div class="simple-search-input">
+										<span class="widget">
+											<input type="text" placeholder="Enter Keyword" autocomplete="off" />
+										</span>
+										<ul class="suggestions">
+											<li>测试数据</li>
+											<li>测试数据</li>
+											<li>测试数据</li>
+											<li>测试数据</li>
+										</ul>
+									</div>
+								</fieldset>
+							</form>
+						</div>
 					</div>
 					<div class="wishlist-minicart">
 						<div class="minicart">
@@ -63,11 +80,13 @@
 			},function(){
 				$(this).find("span").css("background-position","0 -9px");	
 			})
+			
 			$(".mini-cart-total a").hover(function(){
 				$(this).find("span").css("background-position","-80px -49px");	
 			},function(){
 				$(this).find("span").css("background-position","-80px -9px");	
 			})
+			
 			$(".wishlist-minicart .wishlist a").hover(function(){
 				$(this).find(".sprite").css("background-position","-40px -49px");
 				$(this).find("legend").css("background-position","-80px -49px");
@@ -75,6 +94,57 @@
 				$(this).find(".sprite").css("background-position","-40px -9px");
 				$(this).find("legend").css("background-position","-80px -49px");
 			})
+			
+			$(".search-container .suggestions li").hover(function(){
+				$(this).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+			},function(){
+				$(this).removeClass("selLi_hover");
+			})
+			
 		});
+		
+		document.onkeydown=function(e){
+		　　e=window.event||e;
+		　　switch(e.keyCode){
+		　　　　	case 38: 	//向上键
+		　　　　	suggestionsUp();
+		　　　　	break;
+		　　　　	case 40: 	//向下键
+		　　　　
+		　　　　	break;
+	           	case 8: 	//删除键
+		　　　　	break;
+				
+		　　　　	case 13: 	//回车键
+		　　　　
+		　　　　	default:
+		　　　　	break;
+		　　}
+		}
+		
+		//搜索框输入事件
+		var suggestionsMax = 0; //候选列表最大值
+		$(".widget").bind('input propertychange',function(){
+			$(".search-container .suggestions").show();
+			suggestionsMax = $(".search-container .suggestions li").length;
+		});
+		
+		//按键向上列表向上
+		function suggestionsUp(){
+			var max = $(".suggestions li").length;
+			if(max == suggestionsMax){
+				$(".suggestions li").eq(max-1).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				suggestionsMax--
+			}else if(max > suggestionsMax && suggestionsMax >= 0 ){
+				$(".suggestions li").eq(suggestionsMax-1).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				suggestionsMax--
+			}else if(suggestionsMax < 0){
+				suggestionsMax = max-1
+				$(".suggestions li").eq(max-2).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				suggestionsMax--
+			}
+		}
+		
+		
 	</script>
 </html>
