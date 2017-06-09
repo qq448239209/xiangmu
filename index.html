@@ -23,17 +23,29 @@
 			</div>
 			<div class="topCenter">
 				<div class="topCenter-box">
-					<a href="index.html"><span class="logo"></span></a>
+					<a href="index.html"><span class="logo icon"></span></a>
 					<div class="large">
 						<div class="search-trigger">
-							<span></span>SEARCH
+							<span class="icon"></span>SEARCH
 						</div>
 						<div class="account">
-							<a href="javascript:void(0);"><span></span>MY ACCOUNT</a>
+							<a href="javascript:void(0);"><span class="icon"></span>MY ACCOUNT</a>
 						</div>
 					</div>
 					<div class="wishlist-minicart">
-						
+						<div class="minicart">
+							<div class="mini-cart-total">
+								<a href="javascript:void(0);">
+									<span class="sprite icon"></span>
+									<span class="mini-cart-label">Cart</span>(0)
+								</a>
+							</div>
+						</div>
+						<div class="wishlist">
+							<a href="javascript:void(0);">
+								<span class="sprite icon"></span>WISHLIST<span class="wishlist-count">(0)</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -50,6 +62,18 @@
 				$(this).find("span").css("background-position","0 -49px");	
 			},function(){
 				$(this).find("span").css("background-position","0 -9px");	
+			})
+			$(".mini-cart-total a").hover(function(){
+				$(this).find("span").css("background-position","-80px -49px");	
+			},function(){
+				$(this).find("span").css("background-position","-80px -9px");	
+			})
+			$(".wishlist-minicart .wishlist a").hover(function(){
+				$(this).find(".sprite").css("background-position","-40px -49px");
+				$(this).find("legend").css("background-position","-80px -49px");
+			},function(){
+				$(this).find(".sprite").css("background-position","-40px -9px");
+				$(this).find("legend").css("background-position","-80px -49px");
 			})
 		});
 	</script>
