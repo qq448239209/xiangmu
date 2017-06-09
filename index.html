@@ -17,9 +17,40 @@
 		<div class="top clearfix">
 			<div class="topNotice">
 				<div class="topNotice-con">
-					<p>☀ SUMMER PROMOTION: New Charm Club Summer bracelet as a gift. Shop now!* ☀</p>
+					<p><a href="javascript:void(0);">☀ SUMMER PROMOTION: New Charm Club Summer bracelet as a gift. Shop now!* ☀</a></p>
+					<span>X</span>
+				</div>
+			</div>
+			<div class="topCenter">
+				<div class="topCenter-box">
+					<a href="index.html"><span class="logo"></span></a>
+					<div class="large">
+						<div class="search-trigger">
+							<span></span>SEARCH
+						</div>
+						<div class="account">
+							<a href="javascript:void(0);"><span></span>MY ACCOUNT</a>
+						</div>
+					</div>
+					<div class="wishlist-minicart">
+						
+					</div>
 				</div>
 			</div>
 		</div>
 	</body>
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".topNotice-con span").click(function(){
+				$(".topNotice").slideUp(200);
+			})
+			
+			$(".large .account a").hover(function(){
+				$(this).find("span").css("background-position","0 -49px");	
+			},function(){
+				$(this).find("span").css("background-position","0 -9px");	
+			})
+		});
+	</script>
 </html>

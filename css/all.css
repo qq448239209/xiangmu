@@ -1,4 +1,23 @@
+
+/** index top **/
 .top{position:fixed;width:100%;background:#000;}
 .topNotice{padding:20px 30px;width:100%;position:relative;}
 .topNotice-con{width:100%;margin:0 auto;position:relative;max-width:1220px;border:1px solid #fff;padding:0px 42px 0px 10px;line-height:32px;}
-.topNotice-con p{text-align:center;line-height:32px;color:#fff;}
+.topNotice-con p{text-align:center;line-height:32px;}
+.topNotice-con p a{color:#fff;display:block;}
+.topNotice-con span{position:absolute;right:0;top:0;width:32px;height:32px;line-height:32px;color:#fff;cursor:pointer;text-align:center;}
+
+.topCenter{width:100%;margin-left:auto;margin-right:auto;min-width:320px;max-width:1280px;background-color:#000;padding:0 30px;}
+.topCenter-box{height:80px;text-align:center;position:relative;}
+.topCenter-box .logo{width:250px;height:50px;margin-top:30px;background-position:0 0;display:inline-block;background-image: url(../image/logo.png);
+	background-size:100%100%;}
+.topCenter-box .large{position:absolute;top:0;left:0;width:50%;height:30px;font-size:14px;letter-spacing:.17em;overflow:hidden;}
+.topCenter-box .large .search-trigger{float:left;height:30px;padding-top:15px;cursor:pointer;color:#fff;font-size:12px;}
+.large .search-trigger span{position:relative;top:-2px;width:16px;height:16px;vertical-align:middle;margin-right:10px;background-position:-120px -10px;display: inline-block;
+    background-image: url(../image/icon-1.png);}
+.large .search-trigger span:hover{background-position:-120px -50px;}
+.topCenter-box .large .account{padding-left:15px;margin-left:15px;border-left:1px solid #333;float:left;height:30px;padding-top:15px;font-size:12px;}
+.large .account a{color:#999;}
+.large .account a:hover{color:#fff;}
+.large .account span{position: relative;top:-2px;width:16px;height:16px;vertical-align:middle;background-position:0 -9px;display:inline-block;
+    background-image:url(../image/icon-1.png);margin-right:10px;}
