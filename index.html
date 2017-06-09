@@ -110,7 +110,7 @@
 		　　　　	suggestionsUp();
 		　　　　	break;
 		　　　　	case 40: 	//向下键
-		　　　　
+		　　　　	suggestionsDown();
 		　　　　	break;
 	           	case 8: 	//删除键
 		　　　　	break;
@@ -134,14 +134,33 @@
 			var max = $(".suggestions li").length;
 			if(max == suggestionsMax){
 				$(".suggestions li").eq(max-1).addClass("selLi_hover").siblings().removeClass("selLi_hover");
-				suggestionsMax--
+				--suggestionsMax
 			}else if(max > suggestionsMax && suggestionsMax >= 0 ){
 				$(".suggestions li").eq(suggestionsMax-1).addClass("selLi_hover").siblings().removeClass("selLi_hover");
-				suggestionsMax--
+				--suggestionsMax
 			}else if(suggestionsMax < 0){
 				suggestionsMax = max-1
 				$(".suggestions li").eq(max-2).addClass("selLi_hover").siblings().removeClass("selLi_hover");
-				suggestionsMax--
+				--suggestionsMax
+			}else if(suggestionsMax > max){
+				$(".suggestions li").eq(max-1).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				--suggestionsMax
+			}
+		}
+		
+		//按键向下列表向下
+		function suggestionsDown(){
+			var max = $(".suggestions li").length;
+			if(max == suggestionsMax){
+				$(".suggestions li").eq(0).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				++suggestionsMax
+			}else if(max > suggestionsMax){
+				$(".suggestions li").eq(suggestionsMax).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				++suggestionsMax
+			}else if(max < suggestionsMax){
+				suggestionsMax = max - 3
+				$(".suggestions li").eq(1).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				++suggestionsMax
 			}
 		}
 		
