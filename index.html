@@ -357,6 +357,22 @@
 				++suggestionsMax
 			}
 		}
+		
+		//按键向下列表向下
+		function suggestionsDown(){
+			var max = $(".suggestions li").length;
+			if(max == suggestionsMax){
+				$(".suggestions li").eq(0).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				++suggestionsMax
+			}else if(max > suggestionsMax){
+				$(".suggestions li").eq(suggestionsMax).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				++suggestionsMax
+			}else if(max < suggestionsMax){
+				suggestionsMax = max - 3
+				$(".suggestions li").eq(1).addClass("selLi_hover").siblings().removeClass("selLi_hover");
+				++suggestionsMax
+			}
+		}
 		//按下删除键触发
 		function suggestionsDel(){
 			var num = $(".search-container .simple-search-input .widget input[type=text]").val().length;
