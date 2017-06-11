@@ -350,8 +350,62 @@
 			</div>
 			<div class="content-bottom">
 				<div class="content-bottomCon">
-					
+					<form>
+						<div class="info">
+							<p>REGISTER NOW TO RECIEVE NEWS AND EXCLUSIVE UPDATES ON THE SPRING/SUMMER'17 COLLECTION</p>
+						</div>
+						<div class="line">
+							<input type="email" class="email" placeholder="PLEASE ENTER YOUR E-MAIL  ADDRESS HERE " maxlength="50" />
+						</div>
+						<div class="line inputText">
+							<div class="line">
+								<span class="gender">
+									<div class="form-row">
+										<dl class="mcDropdown none">
+											<dt>
+												<span class="labe">Select...</span>
+												<span class="val">1</span>
+											</dt>
+											<dd>
+												<ul>
+													<li>
+														<span class="labe" data-val="1">MR.</span>
+														<span class="labe" data-val="2">MRS.</span>
+													</li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</span>
+								<span class="firstname">
+									<div class="line">
+										<input type="text" class="email" placeholder="*FIRST NAME" maxlength="50" />
+									</div>
+								</span>
+								<span class="lastname">
+									<div class="line">
+										<input type="text" class="email" placeholder="*LAST NAME" maxlength="50" />
+									</div>
+								</span>
+							</div>
+							<div class="desc-mandatory">
+								Fields marked with * are mandatory and must be filled out.
+							</div>
+							<div class="desc-mandatory">
+								Yes, I would like to be informed of current THOMAS SABO trends, products and campaigns by complimentary e-mail newsletter. I can revoke my consent at any time with future effect and/or unsubscribe from the newsletter. I have acknowledged the <a href="javascript:void(0);" btattached="true">data protection information</a>.
+							</div>
+						</div>
+						<div class="line">
+							<input type="button" value="Subscribe" />
+						</div>
+					</form>
 				</div>
+			</div>
+			<div class="html-slot-container">
+				<h1>THOMAS SABO</h1>
+				<p>Since 1984 the name THOMAS SABO has stood for versatile, innovative and trendsetting jewellery and watch designs of the highest quality and for high-end beauty products. The unmistakable Sterling Silver collection, the Charm Club and the exclusive Fine Jewellery collection give the brand its face.</p>
+				<p>A major aspect of THOMAS SABO is individuality: our diverse designs for pendants, earrings, chains, rings, beads and bracelets are harmonised and can be combined perfectly with one another. This gives rise to a quite personal look and unique jewellery statements emerge. Our aim is to offer every customer – whether man or woman – the ideal accessory for every outfit and for every occasion. You can then reinvent yourself every day, from timeless classic to way-out rock 'n' roll style.</p>
+				<p><a href="javascript:void(0);">read more</a></p>
 			</div>
 		</div>
 	</body>
@@ -382,6 +436,36 @@
 			},function(){
 				$(this).find(".tsImg-hov").animate({opacity:'0'});
 				$(this).find(".tsImg").animate({opacity:'1'},"slow");
+			})
+			//填信息下面的下拉框
+			$(".form-row dl.mcDropdown").click(function(e){
+				var display = $(".mcDropdown dd ul").css("display");
+				if(display == 'none'){
+					$(this).addClass("open").removeClass("none");
+				}else{
+					$(this).addClass("none").removeClass("open");
+				}
+				e.stopPropagation();
+			})
+			//选择信息的事件
+			$(".mcDropdown dd ul span.labe").click(function(e){
+				var name = $(this).text();
+				var num = $(this).attr("data-val");
+				$(".form-row dl.mcDropdown dt span.labe").text(name);
+				$(".form-row dl.mcDropdown dt span.val").text(num);
+				$(".form-row dl.mcDropdown").addClass("yxz");
+			})
+			//冒泡事件
+			$("body").click(function(){
+				var display = $(".mcDropdown dd ul").css("display");
+				if(display != 'none'){
+					$(".form-row dl.mcDropdown").addClass("none").removeClass("open");
+				}
+			});
+			//点击emal输入框的事件处理
+			$(".content-bottomCon .line input.email").click(function(){
+				$(".content-bottomCon .info").hide();
+				$(".content-bottomCon .line.inputText").slideDown().css("overflow","");
 			})
 			
 			$(".large .account a").hover(function(){

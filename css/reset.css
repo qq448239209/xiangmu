@@ -8,7 +8,7 @@ object,ol,output,p,pre,q,ruby,samp,section,small,span,strike,strong,sub,summary,
 dl,ol,ul{list-style-type:none}
 body,html{position:static}
 button,input,optgroup,option,select,textarea{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
-button,input{overflow:visible;vertical-align:middle;outline:0}
+button,input{overflow:visible;vertical-align:middle;}
 body,button,input,select,td,textarea,th{font-family:"微软雅黑","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";font-size:12px;color:#333;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6{font-size:100%}
 a{text-decoration:none;cursor:pointer;outline:0}
