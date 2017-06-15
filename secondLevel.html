@@ -25,17 +25,125 @@
 				<div class="navigation">
 					<div class="refinement">
 						<ul class="category-level-1">
-							<li class="expandable active">
+							<li class="open leve active">
 								<div class="refinementSection">
-									<div class="link">
-										<a href="javascript:void(0);" class="refinement-link  active">Category</a>
+									<div class="link" onclick="openList(this)">
+										<a href="javascript:void(0);" class="refinement-link active">CATEGORY</a>
+										<span class="icon-2 icon-down icon-jt"></span>
+									</div>
+									<div class="con">
+										<ul>
+											<li><a class="active" href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="leve">
+								<hr class="separator" />
+							</li>
+							<li class="leve active">
+								<div class="refinementSection">
+									<div class="link" onclick="openList(this)">
+										<a href="javascript:void(0);" class="refinement-link">HOTTEST TRENDS</a>
+										<span class="icon-2 icon-down icon-jt"></span>
+									</div>
+									<div class="con">
+										<ul>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="leve">
+								<hr class="separator" />
+							</li>
+							<li class="leve active">
+								<div class="refinementSection">
+									<div class="link" onclick="openList(this)">
+										<a href="javascript:void(0);" class="refinement-link">THEMES</a>
+										<span class="icon-2 icon-down icon-jt"></span>
+									</div>
+									<div class="con">
+										<ul>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+											<li><a href="javascript:void(0);">Bracelets</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="leve pt30">
+							</li>
+							<li class="leve active">
+								<div class="refinementSection">
+									<div class="link linkNull">
+										REFINE BY
+										<a href="javascript:void(0);" >Clear</a>
+									</div>
+								</div>
+							</li>
+							<li class="leve">
+								<hr class="separator" />
+							</li>
+							<li class="leve">
+								<div class="refinementSection">
+									<div class="link" onclick="openList(this)">
+										<p>Coloru</p>
+										<span class="icon-2 icon-down icon-jt"></span>
+									</div>
+									<div class="con">
+										<div class="box">
+											<a href="javascript:void(0);" data-color="#EC4343" class="color-swatch active"><span></span></a>
+											<a href="javascript:void(0);" data-color="#7B5A84" class="color-swatch"><span></span></a>
+											<a href="javascript:void(0);" data-color="#3A988B" class="color-swatch"><span></span></a>
+											<a href="javascript:void(0);" data-color="#36C154" class="color-swatch"><span></span></a>
+											<a href="javascript:void(0);" data-color="#C58D38" class="color-swatch"><span></span></a>
+										</div>
 									</div>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
+				
+				
 			</div>
+			
+			
 		</div>
 	</body>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	<script type="text/javascript">
+		//列表的展开和关闭
+		function openList(obj){
+			var display = $(obj).parent().find(".con").css("display");
+			if(display == "none"){
+				$(obj).parent().parent().addClass("open");
+			}else{
+				$(obj).parent().parent().removeClass("open");
+			}
+		}
+		
+		$(document).ready(function(){
+			goodsColor();
+		});
+		
+		//赋值给颜色
+		function goodsColor(){
+			var len = $(".refinementSection .con .box .color-swatch").length;
+			for(var i=0;i<=len;i++){
+				var color = $(".refinementSection .con .box .color-swatch").eq(i).attr("data-color");
+				$(".refinementSection .con .box .color-swatch").eq(i).css("background",color);
+			}
+		}
+		
+	</script>
 </html>
