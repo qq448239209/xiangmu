@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="description" content="At the THOMAS SABO Online Shop you will find high quality Sterling silver jewellery, elegant watches and beauty products for her and him. Order now!">
+		<meta name="keywords" content="Thomas Sabo, eCommerce Site">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script src="js/jquery.colorbox-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fangdajing.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//填信息下面的下拉框
+				$(".form-row dl.mcDropdown").click(function(e){
+					var display = $(this).find("dd ul").css("display");
+					if(display == 'none'){
+						$(this).addClass("open").removeClass("none");
+					}else{
+						$(this).addClass("none").removeClass("open");
+					}
+					e.stopPropagation();
+				})
+				//选择信息的事件
+				$(".mcDropdown dd ul span.labe").click(function(e){
+					var name = $(this).text();
+					var num = $(this).attr("data-val");
+					$(this).parent().parent().parent().parent().parent().find("dl.mcDropdown dt span.labe").text(name);
+					$(this).parent().parent().parent().parent().parent().find("dl.mcDropdown dt span.val").text(num);
+					$(this).parent().parent().parent().parent().addClass("yxz");
+				})
+				
+				//冒泡事件
+				$("body").click(function(){
+					var display = $(".mcDropdown dd ul").css("display");
+					if(display != 'none'){
+						$(".form-row dl.mcDropdown").addClass("none").removeClass("open");
+					}
+				});
+				
+				$(".details-expandable").click(function(){
+					var display = $(".product-details .con").css("display");
+					if(display == 'none'){
+						$(".product-details .con").slideDown();
+						$(".product-details ").addClass("open");
+					}else{
+						$(".product-details .con").slideUp();
+						$(".product-details ").removeClass("open");
+					}
+				})
+				
+				
+				$(".details-right a").hover(function(){
+					$(this).addClass("a-hov");
+				},function(){
+					$(this).removeClass("a-hov");
+				})
+			});
+		</script>
+	</head>
+	<body class="ejBody">
+		<div class="goodsDetailsAll clearfix">
+			<div class="top-navigation">
+				<div class="breadcrumbs">
+					<a href="javascript:history.back(-1)">&lsaquo;BACK</a>
+					<span>|</span>
+					<a href="index.html">HOME</a>
+					<span>/</span>
+					<a href="secondLevel.html">CHARMS</a>
+					<span>/</span>
+					<a href="javascript:void(0);">BRACELETS</a>
+				</div>
+				<div class="details-right">
+					<a href="javascript:void(0);" class="details-right-lt">
+						<i></i>
+						<img src="image/goodsXq-1.png" height="35" width="35">
+					</a>
+					<span></span>
+					<a href="javascript:void(0);" class="details-right-rt">
+						<i></i>
+						<img src="image/goodsXq-2.png" height="35" width="35">
+					</a>
+				</div>
+			</div>
+			<div class="goodsDetailsAll-con fl">
+				<div class="con-FangDa" id="fangdajing">
+					<ul class="con-FangDa-ImgList">
+						<li class="active"><img src="image/goodsXq-1.png" data-bigimg="image/goodsXq-1.png"></li>
+						<li><img src="image/goodsXq-2.png" data-bigimg="image/goodsXq-2.png"></li>
+						<li><img src="image/goodsXq-3.png" data-bigimg="image/goodsXq-3.png"></li>
+						<li><img src="image/goodsXq-2.png" data-bigimg="image/goodsXq-2.png"></li>
+					</ul>
+					<div class="con-fangDaIMg">
+						<img src="image/goodsXq-1.png">
+						<div class="magnifyingBegin"></div>
+						<div class="magnifyingShow">
+							<img src="image/goodsXq-1.png">
+						</div>
+					</div>
+					<div class="askbtn"><a href="javascript:void(0);"><img width="72" src="https://cdn.askourt.com/Content/Images/Btn/en-round-black-main.gif"></a></div>
+				</div>
+				<div class="goodsInfo">
+					<p class="product-name"><span>STERLING SILVER</span><span>Rebel at heart</span></p>
+					<h1>BRACELET "POWER BRACELET BROWN ETHNIC"</h1>
+					<div class="goodsInfo-link"><a href="javascript:void(0);">More Product Details ></a></div>
+					<div class="goodsInfo-pic"><span>£180.00</span></div>
+					<div class="product-shipping-delivery">
+						<p>incl. VAT, free-shipping (standard) from £40.00</p>
+						<p>Delivery: 2-4 working days from receipt of order</p>
+					</div>
+					<div class="product-details-link">
+						<p>Item No A1577-353-16</p>
+					</div>
+					<div class="product-variations">
+						<h3>Size</h3>
+						<div class="product-left">
+							<div class="select">
+								<div class="form-row">
+									<dl class="mcDropdown none">
+										<dt>
+											<span class="labe labe-2">Select...</span>
+											<span class="val">1</span>
+										</dt>
+										<dd>
+											<ul>
+												<li>
+													<span class="labe" data-val="1">MR.</span>
+													<span class="labe" data-val="2">MRS.</span>
+													<span class="labe" data-val="1">MR.</span>
+													<span class="labe" data-val="2">MRS.</span>
+													<span class="labe" data-val="1">MR.</span>
+													<span class="labe" data-val="2">MRS.</span>
+													<span class="labe" data-val="1">MR.</span>
+													<span class="labe" data-val="2">MRS.</span>
+												</li>
+											</ul>
+										</dd>
+										<div class="icon-2 icon-xia"></div>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="product-right">
+							<div class="select">
+								<div class="form-row">
+									<dl class="mcDropdown none">
+										<dt>
+											<span class="labe labe-2">1</span>
+											<span class="val">1</span>
+										</dt>
+										<dd>
+											<ul>
+												<li>
+													<span class="labe" data-val="1">1</span>
+													<span class="labe" data-val="1">2</span>
+												</li>
+											</ul>
+										</dd>
+										<div class="icon-2 icon-xia"></div>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="in-stock-msg"><span></span>available</p>
+					<button class="goodsInfo-sbm" type="submit" title="Add to Cart">Add to Cart</button>
+					<div class="product-actions">
+						<a href="javascript:void(0);" class="fl"><span class="sprite icon-4"></span>Check in-store availability</a>
+						<a href="javascript:void(0);" class="fr"><span class="star icon"></span>Add to wish list</a>
+					</div>
+					<div class="social">
+						<p>Share now</p>
+						<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_wealink" data-cmd="wealink" title="分享到若邻网"></a></div>
+						<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["tqq","bdxc","kaixin001","tqf","tieba","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","h163","evernotecn","copy","print"],"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+					</div>
+				</div>
+			</div>
+			<div class="recommendations fl">
+				<h2>YOU MIGHT ALSO LIKE:</h2>
+				<div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			            	<a class="tuijianGoods" href="javascript:void(0);">
+			            		<img src="image/goods-2.jpg" />
+			            	</a>
+			            	<a class="tuijian-text" href="javascript:void(0);">
+			            		<p class="name">Fine Jewellery</p>
+			            		<p class="text">necklace</p>
+			            	</a>
+			            </div>
+			            <div class="swiper-slide">
+			            	<a class="tuijianGoods" href="javascript:void(0);">
+			            		<img src="image/goods-1.jpg" />
+			            	</a>
+			            	<a class="tuijian-text" href="javascript:void(0);">
+			            		<p class="name">Fine Jewellery</p>
+			            		<p class="text">necklace</p>
+			            	</a>
+			            </div>
+			            <div class="swiper-slide">
+			            	<a class="tuijianGoods" href="javascript:void(0);">
+			            		<img src="image/goods-3.jpg" />
+			            	</a>
+			            	<a class="tuijian-text" href="javascript:void(0);">
+			            		<p class="name">Fine Jewellery</p>
+			            		<p class="text">necklace</p>
+			            	</a>
+			            </div>
+			            <div class="swiper-slide">
+			            	<a class="tuijianGoods" href="javascript:void(0);">
+			            		<img src="image/goodsXq-1.png" />
+			            	</a>
+			            	<a class="tuijian-text" href="javascript:void(0);">
+			            		<p class="name">Fine Jewellery</p>
+			            		<p class="text">necklace</p>
+			            	</a>
+			            </div>
+			            <div class="swiper-slide">
+			            	<a class="tuijianGoods" href="javascript:void(0);">
+			            		<img src="image/goodsXq-2.png" />
+			            	</a>
+			            	<a class="tuijian-text" href="javascript:void(0);">
+			            		<p class="name">Fine Jewellery</p>
+			            		<p class="text">necklace</p>
+			            	</a>
+			            </div>
+			            <div class="swiper-slide">
+			            	<a class="tuijianGoods" href="javascript:void(0);">
+			            		<img src="image/goodsXq-3.png" />
+			            	</a>
+			            	<a class="tuijian-text" href="javascript:void(0);">
+			            		<p class="name">Fine Jewellery</p>
+			            		<p class="text">necklace</p>
+			            	</a>
+			            </div>
+			        </div>
+				</div>
+			</div>
+			<div class="product-details fl open">
+				<h2 class="details-expandable">Product Details</h2>
+				<div class="con">
+					<div class="productdetail-description">
+						The miniature Love Knot pendant in an exciting two-tone look crafted from blackened 925 Sterling silver and 18k yellow gold goes perfectly with both Rock ‘n’ Roll and elegant looks. As a Chinese symbol of love, it is also perfect as an exquisite gift.
+					</div>
+					<ul class="clearfix">
+						<li>
+							<label>Category：</label><span>Pendant</span>
+						</li>
+						<li>
+							<label>Material：</label><span>Pendant</span>
+						</li>
+						<li>
+							<label>Colour：</label><span>Pendant</span>
+						</li>
+						<li>
+							<label>Clasp：</label><span>Pendant</span>
+						</li>
+						<li>
+							<label>Height：</label><span>Pendant</span>
+						</li>
+						<li>
+							<label>Width：</label><span>Pendant</span>
+						</li>
+						<li>
+							<label>Article number：</label><span>Pendant</span>
+						</li>
+					</ul>
+					<div class="productdetail-description">
+						All items purchased from THOMAS SABO come with a matching jewellery packaging. Lend your gift a more personal note with one of our greetings cards.
+					</div>
+					<p>Please note <a href="javascript:void(0);">our instructions</a> for wear for children.</p>
+				</div>
+			</div>
+		</div>
+		<div class="bottom bottom-erji clearfix">
+			<div class="back-to-top">
+				<a href="javascript:void(0);">
+					Back to top
+					<span class="sprite icon-2"></span>
+				</a>
+			</div>
+			<ul class="grid clearfix">
+				<li class="column">
+					<div class="tit">
+						Country & Language
+					</div>
+					<div class="line bottomsel">
+						<div class="form-row">
+							<dl class="mcDropdown none">
+								<dt>
+									<span class="labe labe-2">Select...</span>
+									<span class="val">1</span>
+								</dt>
+								<dd>
+									<ul>
+										<li>
+											<span class="labe" data-val="1">MR.</span>
+											<span class="labe" data-val="2">MRS.</span>
+											<span class="labe" data-val="1">MR.</span>
+											<span class="labe" data-val="2">MRS.</span>
+											<span class="labe" data-val="1">MR.</span>
+											<span class="labe" data-val="2">MRS.</span>
+											<span class="labe" data-val="1">MR.</span>
+											<span class="labe" data-val="2">MRS.</span>
+										</li>
+									</ul>
+								</dd>
+								<div class="icon-2 icon-xia"></div>
+							</dl>
+						</div>
+					</div>
+					<div class="line bottomsel">
+						<div class="form-row">
+							<dl class="mcDropdown none">
+								<dt>
+									<span class="labe labe-2">Select...</span>
+									<span class="val">1</span>
+								</dt>
+								<dd>
+									<ul>
+										<li>
+											<span class="labe" data-val="1">MR.</span>
+											<span class="labe" data-val="2">MRS.</span>
+										</li>
+									</ul>
+								</dd>
+								<div class="icon-2 icon-xia"></div>
+							</dl>
+						</div>
+					</div>
+				</li>
+				<li class="column">
+					<div class="tit">
+						PAYMENT
+					</div>
+					<div class="con">
+						<ul>
+							<li><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dw6deac7d5/footer/icon-visa-47x17.png">VISA</li>
+							<li><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dw25cee183/footer/icon-mastercard-47x17.png">Mastercard</li>
+							<li><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dw5b6d8281/footer/icon-visa-debit-47x17.png">VISA Debit</li>
+							<li><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dw6dfbb825/footer/icon-maestro-47x17.png">Mastercard Debit</li>
+							<li><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dwe7c39a84/footer/icon-paypal-45x17.png">Paypal</li>
+							<li>Gift-Card</li>
+						</ul>
+					</div>
+				</li>
+				<li class="column">
+					<div class="tit">
+						DISPATCH AND DELIVERY
+					</div>
+					<div class="con">
+						<p><a href="http://www.thomassabo.com/GB/en_GB/customer-service/dispatch-and-delivery/dispatch-delivery.html" btattached="true">Delivery:</a> 2 to&nbsp;4 working days</p>
+						<p>Free delivery from £40.00</p>
+						<p><a href="http://www.thomassabo.com/GB/en_GB/customer-service/dispatch-and-delivery/dispatch-delivery.html" btattached="true">Standard and express delivery available</a></p>
+						<p>Delivery is made through&nbsp;&nbsp;<img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dwfbc8b92a/footer/icon-ups-35x35.png"></p>
+					</div>
+				</li>
+				<li class="column">
+					<div class="tit">
+						CUSTOMER SERVICE
+					</div>
+					<div class="con">
+						<ul>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/customer-service/contact-us/contact-us.html?pc=customerService" title="Contact" btattached="true">Contact</a></li>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/customer-service/returns-and-cancellation/cancellation.html?pc=customerService" btattached="true">Returns</a></li>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/customer-service/returns-and-cancellation/cancellation.html?pc=customerService" btattached="true">Cancellation</a></li>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/customer-service/service/service.html?pc=customerService" btattached="true">Service</a></li>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/customer-service/productinformation/product-information.html" btattached="true">Productinformation</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="column">
+					<div class="tit">
+						ABOUT US
+					</div>
+					<div class="con">
+						<ul>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/brand-world/company/bw_brand_2014_00_00_history/BW_Brand_2014_00_00_HISTORY.html" btattached="true">Company</a></li>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/jobs/jobs/JOB-OVERVIEW.html" btattached="true">Jobs</a></li>
+							<li><a href="http://press.thomassabo.com/user-login" target="_blank" btattached="true">Press</a></li>
+							<li><a href="http://professionals.thomassabo.com/en/professional/profonly.html" target="_blank" btattached="true">Professionals</a></li>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/customer-service/terms-conditions/terms-conditions.html?pc=customerService" btattached="true">Terms &amp; Conditions</a></li>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/customer-service/data-privacy/data-privacy.html?pc=customerService" btattached="true">Data privacy</a></li>
+							<li><a href="http://www.thomassabo.com/GB/en_GB/customer-service/legal-notice/imprint.html?pc=customerService" btattached="true">Legal notice</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="column">
+					<div class="tit">
+						FOLLOW US ON
+					</div>
+					<div class="con">
+						<p>Women</p>
+						<ul>
+							<li><a class="facebook" href="http://www.facebook.com/ThomasSaboUK" target="_blank" btattached="true"><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dw4a89fa40/footer/icon-facebook-19x17.png">Facebook</a></li>
+							<li><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dwe98a307f/footer/icon-instgram-19x17.png" style="width: 19px; height: 17px;"> <a href="http://instagram.com/thomassabo" target="_blank" btattached="true">Instagram</a></li>
+							<li><a class="twitter" href="http://twitter.com/THOMASSABO" target="_blank" btattached="true"><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dweb56795b/footer/icon-twitter-19x17.png">Twitter</a></li>
+							<li><a class="youtube" href="http://www.youtube.com/ThomasSaboOfficial" target="_blank" btattached="true"><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dw4c9bbf67/footer/icon-youtube-19x17.png">Youtube</a></li>
+							<li><a class="pinterest" href="http://www.pinterest.com/thomassabo" target="_blank" btattached="true"><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dwb406d975/footer/icon-pinterest-19x17.png">Pinterest</a></li>
+							<li><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dw420c7039/footer/icon-google-19x17.png" style="width: 19px; height: 17px;"> <a href="https://plus.google.com/+thomassabo/" target="_blank" btattached="true">Google+</a></li>
+							<li>
+								<div style="margin-left: 20.5pt;"><a href="https://www.snapchat.com/add/thomassaboworld" target="_blank" btattached="true">Snapchat</a></div>
+							</li>
+						</ul>
+						<p>Men</p>
+						<ul>
+							<li><a class="facebook" href="http://www.facebook.com/thomassabo.rebelatheart" target="_blank" btattached="true"><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dw4a89fa40/footer/icon-facebook-19x17.png">Facebook</a></li>
+							<li><img alt="" src="http://www.thomassabo.com/on/demandware.static/-/Library-Sites-global/default/dwe98a307f/footer/icon-instgram-19x17.png" style="width: 19px; height: 17px;"> <a href="http://instagram.com/thomassabo_rebelatheart/" target="_blank" btattached="true">Instagram</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js" ></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+	        pagination:'.swiper-pagination',
+	        slidesPerView:3,
+	        paginationClickable: true,
+	        spaceBetween:30,
+	        freeMode:true,
+	        autoplay:3000,
+	    });
+	</script>
+</html>
